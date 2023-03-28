@@ -26,7 +26,8 @@ img {
 .card-list {
   width: 90vw;
   max-width: 1170px;
-  margin: 5rem auto;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   gap: 4rem;
 }
@@ -51,7 +52,7 @@ img {
 
 .list-items li {
   list-style: none;
-  /* margin-inline-start: 20px; */
+  margin-inline-start: 20px;
 }
 
 h2 {
@@ -67,7 +68,12 @@ span {
 .price {
   display: flex;
   text-align: center;
-  margin: auto;
+}
+
+.first_price {
+  text-decoration: line-through;
+  opacity: 0.5;
+  font-size: 15px;
 }
 
 button {
@@ -77,4 +83,17 @@ button {
   padding: 1rem;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  margin-top: 10px;
+}
+
+.price-btn {
+  background-color: #e4a5d5;
+  width: 50px;
+  margin-left: 2px;
+  transition: 0.4s ease-in-out;
+}
+
+.price-btn:hover {
+  background-color: #d515a8;
+  color: #f1f7f8;
 }

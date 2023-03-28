@@ -7,8 +7,10 @@ export const Product = (props) => {
       <img src={image} alt={title} />
       <h2>{title}</h2>
       <div>
-        <span>{firstPrice}</span>
-        <span>{secondPrice}</span>
+        <span className="first_price line-through ">{firstPrice}</span>
+        <span className="second_price">
+          <button className="price-btn">{secondPrice} </button>
+        </span>
       </div>
       <button>Buy Now</button>
     </section>
